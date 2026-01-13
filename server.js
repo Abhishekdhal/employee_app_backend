@@ -32,7 +32,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/leaves', require('./routes/leaves'));
 app.use('/api/community', require('./routes/community'));
 app.use('/api/chat', require('./routes/ai'));
-
+app.use('/api/events', require('./routes/events'));
 // Root Route (Optional: To check if backend is running)
 app.get('/', (req, res) => {
   res.send('HCL Employee Support Backend is Running!');
